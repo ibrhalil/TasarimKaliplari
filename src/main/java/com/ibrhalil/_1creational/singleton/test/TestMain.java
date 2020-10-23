@@ -1,8 +1,6 @@
 package com.ibrhalil._1creational.singleton.test;
 
-import com.ibrhalil._1creational.singleton.Singleton1;
-import com.ibrhalil._1creational.singleton.Singleton2;
-import com.ibrhalil._1creational.singleton.Singleton3;
+import com.ibrhalil._1creational.singleton.*;
 
 public class TestMain
 {
@@ -66,6 +64,30 @@ public class TestMain
         System.out.println(bbb2);
 
         kontrolMek(aaa2,bbb2);
+
+        /*************************************************************/
+
+        //1. nesne oluşturuldu
+        Singleton2_1 aaaa = Singleton2_1.getSingleton2_1();
+        System.out.println(aaaa);
+
+        //2. nesne oluşturuldu
+        Singleton2_1 bbbb = Singleton2_1.getSingleton2_1();
+        System.out.println(bbbb);
+
+        kontrolMek(aaaa,bbbb);
+
+        /*************************************************************/
+
+        //1. nesne oluşturuldu
+        Singleton4 aaaaa = Singleton4.getSingleton4();
+        System.out.println(aaaaa);
+
+        //2. nesne oluşturuldu
+        Singleton4 bbbbb = Singleton4.getSingleton4();
+        System.out.println(bbbbb);
+
+        kontrolMek(aaaaa,bbbbb);
 
     }
 
